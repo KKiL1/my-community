@@ -39,6 +39,7 @@ public class HomeController {
                 User user=userService.findUserById(post.getUserId());
                 map.put("user",user);
                 discussPosts.add(map);
+                
             }
         }
         model.addAttribute("discussPosts",discussPosts);
